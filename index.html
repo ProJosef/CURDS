@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CURDS</title>
+  </head>
+  <body>
+    <div class="countiner">
+      <header>
+        <h3>CURDS</h3>
+        <h6>product manchment system</h6>
+      </header>
+      <main>
+        <input type="text" placeholder="title" id="title" />
+        <div class="price">
+          <input
+            onkeyup="totalOfPrice()"
+            type="number"
+            placeholder="price"
+            id="price"
+          />
+          <input
+            onkeyup="totalOfPrice()"
+            type="number"
+            placeholder="taxes"
+            id="taxes"
+          />
+          <input
+            onkeyup="totalOfPrice()"
+            type="number"
+            placeholder="ads"
+            id="ads"
+          />
+          <input
+            onkeyup="totalOfPrice()"
+            type="number"
+            placeholder="discount"
+            id="discount"
+          />
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count" />
+        <input type="text" placeholder="category" id="category" />
+        <button id="create">create</button>
+      </main>
+      <output>
+        <input type="text" placeholder="search" id="search" />
+        <div class="search">
+          <button onclick="searchtitle()">search by title</button>
+          <button onclick="searchcategory()">search by category</button>
+        </div>
+        <div id="rm"></div>
+        <table>
+          <thead>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </output>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
