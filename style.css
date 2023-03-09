@@ -1,0 +1,85 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+  font-family: system-ui;
+  color: white;
+}
+.countiner {
+  width: 80%;
+  margin: auto;
+}
+header {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+}
+input {
+  width: 100%;
+  padding: 4px;
+  margin: 4px;
+  background: #111;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+input:focus {
+  transform: scale(1.05);
+  background: #000;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+small{
+  background: #f19;
+}
+small::before {
+  content: "total:";
+}
+button {
+  width: 100%;
+  padding: 4px;
+  margin: 4px;
+  background: rgb(85, 19, 146);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background: rgb(122, 66, 175);
+  letter-spacing: 1px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+.search button {
+  width: 40%;
+}
+.headers,
+#content>div {
+  display: flex;
+  text-align: center;
+}
+.headers h6,
+#content>div>div {
+  width: 10%;
+  padding: 2px;
+}
+.headers h6 {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 800px) {
+  .countiner {
+    width: 97%;
+    margin: 0 auto;
+  }
+}
