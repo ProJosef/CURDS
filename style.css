@@ -15,7 +15,7 @@ body {
 header {
   text-align: center;
   text-transform: uppercase;
-  margin: 10px;
+  margin-block: 16px;
 }
 input {
   width: 100%;
@@ -35,7 +35,7 @@ input:focus {
   display: flex;
   align-items: center;
 }
-small{
+small {
   background: #f19;
 }
 small::before {
@@ -65,12 +65,12 @@ button:hover {
   width: 40%;
 }
 .headers,
-#content>div {
+#content > div {
   display: flex;
   text-align: center;
 }
 .headers h6,
-#content>div>div {
+#content > div > div {
   width: 10%;
   padding: 2px;
 }
